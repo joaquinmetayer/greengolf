@@ -10,19 +10,6 @@
     user-select: none;
     font-family: 'Tiro Gurmukhi', serif;
 }
-
-/*
-    background: #0b2b26; verde mas claro
-    background-color: #08201c; verde mas oscuro
-
-    background: #1a3a5d; azul para algun boton
-    background: #e10600;
-    #fea206
-
-    font-family: 'Lato', sans-serif;
-    fuente para otros textos / botones
-
-*/
 li{
     list-style: none;
 }
@@ -111,7 +98,7 @@ nav{
 }
 .nav-btn li ul {
     display:none;
-    min-height: 100vh;
+    min-height: 25em;
 }
 .nav-btn li:hover > ul {
     display: flex;
@@ -152,7 +139,6 @@ nav{
     grid-area: school-text;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .school-img{
     grid-area: school-img;
@@ -175,15 +161,6 @@ nav{
     grid-area: horizontal-photo;
     border-top: 0.5px solid #000000;
     border-bottom: 0.5px solid #000000;
-}
-
-.grid-container-main{
-    display: grid;
-    grid-template-areas: 
-        "nav nav"
-        "img-phrase img-phrase"
-        "school-text school-img"
-        "horizontal-photo horizontal-photo";
 }
 
 .instructors-title{
@@ -229,13 +206,16 @@ nav{
     padding: 2em;
 }
 
-.grid-container-instructors{
-    display: grid;
-    grid-template-areas: 
-        "instructors-title instructors-title"
-        "instructor-01 instructor-02";
-}
 
+.price-1{
+    grid-area: price-1;
+}
+.price-2{
+    grid-area: price-2;
+}
+.price-3{
+    grid-area: price-3;
+}
 .prices-title{
     grid-area: prices-title;
     color: #fff;
@@ -252,9 +232,7 @@ nav{
     text-shadow: 10px 10px 30px #000000;
 }
 .price-1, .price-2, .price-3{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+
     border-bottom: 0.5px solid #000000;
     border-left: 0.5px solid #000000;    
 }
@@ -321,21 +299,13 @@ button{
     background-color: #fff;
     cursor: pointer;
 }
-.grid-container-price{
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-        "prices-title prices-title prices-title" 
-        "price-1 price-2 price-3"
-        "inscription inscription inscription";
-    border-bottom: 0.5px solid #000000;
-}
-footer{
+.footer{
     padding: 2em;
     font-size: 0.8em;
     background-color: #0b2b26;
     color: #fff;
     border-top: 1px solid rgba(255,255,255,0.2);
+    grid-area: footer;
 }
 footer p{
     padding: 0.5em;
@@ -345,23 +315,49 @@ footer a{
     text-decoration: underline 2px #fea206; 
 }
 
+.grid-container-main{
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav nav nav nav"
+        "img-phrase img-phrase img-phrase img-phrase img-phrase img-phrase"
+        "school-text school-text school-text school-img school-img school-img"
+        "horizontal-photo horizontal-photo horizontal-photo horizontal-photo horizontal-photo horizontal-photo"
+        "instructors-title instructors-title instructors-title instructors-title instructors-title instructors-title"
+        "instructor-01 instructor-01 instructor-01 instructor-02 instructor-02 instructor-02"
+        "prices-title prices-title prices-title prices-title prices-title prices-title"
+        "price-1 price-1 price-2 price-2 price-3 price-3"
+        "inscription inscription inscription inscription inscription inscription"
+        "footer footer footer footer footer footer";
+}
 
 @media (max-width: 900px){
     .grid-container-main{
         grid-template-areas: 
-            "nav nav"
-            "img-phrase  img-phrase"
-            "school-text school-text"
-            "school-img school-img"
-            "horizontal-photo horizontal-photo";
+        "nav"
+        "img-phrase"
+        "school-text"
+        "school-img"
+        "horizontal-photo"
+        "instructors-title"
+        "instructor-01"
+        "instructor-02"
+        "prices-title"
+        "price-1"
+        "price-2"
+        "price-3"
+        "inscription"
+        "footer";
     }
     .school-img{
         grid-area: school-img;
         border-top: 0.5px solid #000000;
         border-left: 0;
     }
-}
 
+    .img-phrase{
+       height: 125vh;
+    }
+}
 @media (max-width: 700px) {
     .nav-second{
         display: none;
@@ -369,22 +365,7 @@ footer a{
     .nav-hidden{
         display: inline;
     }
-    .grid-container-instructors{
-        grid-template-areas: 
-        "instructors-title instructors-title"
-        "instructor-01 instructor-01"
-        "instructor-02 instructor-02";   
-    }
-    .grid-container-price{
-        grid-template-areas:
-            "prices-title" 
-            "price-1"
-            "price-2"
-            "price-3"
-            "inscription";
-    }  
     .price-1, .price-2, .price-3{
-
         border-left: 0;    
     }
 }
