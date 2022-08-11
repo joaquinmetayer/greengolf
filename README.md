@@ -1,1 +1,1 @@
-# greengolf
+# golfschool
