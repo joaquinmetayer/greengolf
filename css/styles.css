@@ -133,7 +133,7 @@ nav{
     text-align: center;
 }
 .img-phrase p{
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 600;
     padding: 2em;
     color: #fff;
@@ -370,6 +370,6 @@ footer a{
         border-left: 0;    
     }
     .img-phrase{
-        height: 140vh;
+        height: 100vh;
     }
 }
