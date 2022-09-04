@@ -316,7 +316,7 @@ nav {
   color: #fff;
 }
 
-.nav-second a:hover {
+.nav-second a:hover, .nav-btn li a:hover {
   text-decoration: underline 2px #fea206;
 }
 
@@ -329,7 +329,6 @@ nav {
   text-align: center;
   background-color: #0b2b26;
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   font-family: "Lato", sans-serif;
 }
 
@@ -348,11 +347,7 @@ nav {
   color: #fff;
 }
 
-.nav-btn li a:hover {
-  text-decoration: underline 2px #fea206;
-}
-
-.nav-btn li ul li {
+.nav-btn li ul li, .nav-mobile {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 

@@ -41,7 +41,7 @@ nav{
     text-decoration: none;
     color: #fff;
 }
-.nav-second a:hover{
+.nav-second a:hover, .nav-btn li a:hover{
     text-decoration: underline 2px #fea206;
 }
 .nav-hidden{
@@ -52,7 +52,6 @@ nav{
     text-align: center;
     background-color: #0b2b26;
     color: #fff;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
     font-family: 'Lato', sans-serif;
 }
 .nav-mobile ul{
@@ -68,10 +67,7 @@ nav{
     text-decoration: none;
     color: #fff;
 }
-.nav-btn li a:hover {
-    text-decoration: underline 2px #fea206; 
-}
-.nav-btn li ul li{
+.nav-btn li ul li, .nav-mobile{
     border-top: 1px solid rgba(255,255,255,0.2);
 }
 .nav-btn li ul {
