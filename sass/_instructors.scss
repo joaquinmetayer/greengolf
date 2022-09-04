@@ -1,0 +1,36 @@
+.instructors-title{
+    font-size: 2em;
+    padding: 1em;
+    grid-area: instructors-title;
+}
+.instructor-img{
+   max-height: 500px;
+   height: 100%;
+   width: 100%;
+}
+.instructor-01{
+    grid-area: instructor-01;
+    border-right: 0.5px solid #000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.instructor-02{
+    grid-area: instructor-02;
+    border-right: 0.5px solid #000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.instructor-title{
+    font-size: 1.75em;
+    padding: 1em;
+}
+.instructor-subtitle{
+    font-weight: bold;
+    padding: 2em 2em 0em 2em;
+}
+.instructor-text{
+    min-height: 100px;
+    padding: 2em;
+}

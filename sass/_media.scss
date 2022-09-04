@@ -1,0 +1,55 @@
+@media (max-width: 900px){
+    .grid-container-main{
+        grid-template-areas: 
+        "nav"
+        "img-phrase"
+        "school-text"
+        "school-img"
+        "horizontal-photo"
+        "mission-title"
+        "mission-container"
+        "instructors-title"
+        "instructor-01"
+        "instructor-02"
+        "prices-title"
+        "price-1"
+        "price-2"
+        "price-3"
+        "inscription"
+        "location-map"
+        "seeyou"
+        "footer";
+    }
+    .mission-container{
+        grid-template-areas: 
+        "mission-01"
+        "mission-02"
+        "mission-04"
+        "mission-03"
+        "mission-05"
+        "mission-06"
+        "mission-07"
+        "mission-08"
+        "mission-09";
+    }
+    .school-img{
+        grid-area: school-img;
+        border-top: 0.5px solid #000000;
+        border-left: 0;
+    }
+    .price-description{
+        min-height: 0;
+    }
+    .nav-second{
+        display: none;
+    }
+    .nav-hidden{
+        display: inline;
+    }
+    .price-1, .price-2, .price-3{
+        border-left: 0;    
+    }
+    .img-phrase{
+        height: 100vh;
+    }
+}

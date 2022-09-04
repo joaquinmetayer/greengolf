@@ -1,0 +1,49 @@
+.price-1{
+    grid-area: price-1;
+}
+.price-2{
+    grid-area: price-2;
+}
+.price-3{
+    grid-area: price-3;
+}
+.prices-title{
+    grid-area: prices-title;
+    color: #fff;
+    font-size: 2em;
+    padding: 1em;
+    background-image: url('../media/06.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.prices-title p{
+    text-shadow: 10px 10px 30px #000000;
+}
+.price-1, .price-2, .price-3{
+    border-left: 0.5px solid #000000;    
+}
+.price-title{
+    font-size: 1.75em;
+    padding: 1em;
+}
+.price-description{
+    height: 150px;
+    padding: 2em;
+}
+.price-description ol{
+    padding: 0.5em 0 0 1em;
+}
+.price-price-currency{
+    font-size: 1.75em;
+    text-align: center;
+    padding: 1em;
+}
+.price-price-currency a{
+    text-decoration: none;
+    color: #000000;
+}
+.price-price-currency a:hover{
+    text-decoration: underline 2px #fea206;
+}

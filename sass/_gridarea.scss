@@ -1,0 +1,18 @@
+.grid-container-main{
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav nav nav nav"
+        "img-phrase img-phrase img-phrase img-phrase img-phrase img-phrase"
+        "school-text school-text school-text school-img school-img school-img"
+        "horizontal-photo horizontal-photo horizontal-photo horizontal-photo horizontal-photo horizontal-photo"
+        "mission-title mission-title mission-title mission-title mission-title mission-title"
+        "mission-container mission-container mission-container mission-container mission-container mission-container"
+        "instructors-title instructors-title instructors-title instructors-title instructors-title instructors-title"
+        "instructor-01 instructor-01 instructor-01 instructor-02 instructor-02 instructor-02"
+        "prices-title prices-title prices-title prices-title prices-title prices-title"
+        "price-1 price-1 price-2 price-2 price-3 price-3"
+        "inscription inscription inscription inscription inscription inscription"
+        "location-map location-map location-map location-map location-map location-map"
+        "seeyou seeyou seeyou seeyou seeyou seeyou"
+        "footer footer footer footer footer footer";
+}

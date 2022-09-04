@@ -1,0 +1,21 @@
+.img-phrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../media/014.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    grid-area: img-phrase;
+    text-align: center;
+}
+.img-phrase p{
+    font-size: 3em;
+    font-weight: 600;
+    padding: 2em;
+    color: #fff;
+    text-shadow: 15px 30px 50px #000000;
+}

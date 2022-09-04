@@ -1,0 +1,75 @@
+.mission-title{
+    font-size: 1.5em;
+    padding: 1em;
+    grid-area: mission-title;
+}
+.mission-container{
+    grid-area: mission-container;
+    display: grid;
+    grid-template-areas: "mission-01 mission-01 mission-01 mission-02 mission-02 mission-02"
+    "mission-03 mission-03 mission-03 mission-04 mission-04 mission-04"
+    "mission-05 mission-05 mission-05 mission-05 mission-05 mission-05"
+    "mission-06 mission-06 mission-07 mission-07 mission-08 mission-08"
+    "mission-09 mission-09 mission-09 mission-09 mission-09 mission-09";
+}
+.mission-text{
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 2em;
+    font-style: italic;
+}
+.mission-01{
+    grid-area: mission-01;
+    background-color: #0b2b26;
+    color: #fff;
+    border-right: 0.5px solid #000000;
+    height: 400px;
+}
+.mission-02{
+    grid-area: mission-02;
+    height: 400px;
+}
+.mission-03{
+    grid-area: mission-03;
+    border-right: 0.5px solid #000000;
+
+}
+.mission-04{
+    grid-area: mission-04;
+}
+.mission-05{
+    grid-area: mission-05;
+    background-image: url(../media/golf1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.mission-06{
+    grid-area: mission-06;
+    border-right: 0.5px solid #000000;
+    height: 400px;
+
+}
+.mission-07{
+    grid-area: mission-07;
+    text-align: center;
+    border-right: 0.5px solid #000000;
+    background-color: #08201c;
+    color: #fff;
+    height: 400px;
+}
+.mission-08{
+    grid-area: mission-08;
+    height: 400px;
+}
+.mission-09{
+    grid-area: mission-09;
+    background-image: url(../media/golf4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}

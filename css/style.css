@@ -1,0 +1,499 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Tiro Gurmukhi", serif;
+}
+
+.border-btm {
+  border-bottom: 0.5px solid #000000;
+}
+
+.list-no-style li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-map {
+  grid-area: location-map;
+}
+
+.seeyou {
+  font-size: 1.75em;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  background-image: url("../media/017.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: seeyou;
+}
+
+.footer {
+  padding: 2em;
+  font-size: 0.8em;
+  background-color: #0b2b26;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  grid-area: footer;
+}
+
+footer p {
+  padding: 0.5em;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline 2px #fea206;
+}
+
+.img-phrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../media/014.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  grid-area: img-phrase;
+  text-align: center;
+}
+
+.img-phrase p {
+  font-size: 3em;
+  font-weight: 600;
+  padding: 2em;
+  color: #fff;
+  text-shadow: 15px 30px 50px #000000;
+}
+
+.inscription {
+  grid-area: inscription;
+}
+
+.inscription-title {
+  font-size: 2em;
+  padding: 1em;
+  color: #fff;
+  background-image: url("../media/017.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inscription-form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 1em 0 0;
+  margin: 0 auto;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.inscription-form p {
+  padding: 0 1em 1em 1em;
+}
+
+.inscription-form form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  padding: 1em;
+  font-size: 0.8em;
+  border: 0;
+  margin-bottom: 0.5px;
+  color: #000000;
+}
+
+button {
+  padding: 1em 0 1em;
+  font-size: 0.8em;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b2b26;
+  color: #fff;
+}
+
+.instructors-title {
+  font-size: 2em;
+  padding: 1em;
+  grid-area: instructors-title;
+}
+
+.instructor-img {
+  max-height: 500px;
+  height: 100%;
+  width: 100%;
+}
+
+.instructor-01 {
+  grid-area: instructor-01;
+  border-right: 0.5px solid #000000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.instructor-02 {
+  grid-area: instructor-02;
+  border-right: 0.5px solid #000000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.instructor-title {
+  font-size: 1.75em;
+  padding: 1em;
+}
+
+.instructor-subtitle {
+  font-weight: bold;
+  padding: 2em 2em 0em 2em;
+}
+
+.instructor-text {
+  min-height: 100px;
+  padding: 2em;
+}
+
+.mission-title {
+  font-size: 1.5em;
+  padding: 1em;
+  grid-area: mission-title;
+}
+
+.mission-container {
+  grid-area: mission-container;
+  display: grid;
+  grid-template-areas: "mission-01 mission-01 mission-01 mission-02 mission-02 mission-02" "mission-03 mission-03 mission-03 mission-04 mission-04 mission-04" "mission-05 mission-05 mission-05 mission-05 mission-05 mission-05" "mission-06 mission-06 mission-07 mission-07 mission-08 mission-08" "mission-09 mission-09 mission-09 mission-09 mission-09 mission-09";
+}
+
+.mission-text {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 2em;
+  font-style: italic;
+}
+
+.mission-01 {
+  grid-area: mission-01;
+  background-color: #0b2b26;
+  color: #fff;
+  border-right: 0.5px solid #000000;
+  height: 400px;
+}
+
+.mission-02 {
+  grid-area: mission-02;
+  height: 400px;
+}
+
+.mission-03 {
+  grid-area: mission-03;
+  border-right: 0.5px solid #000000;
+}
+
+.mission-04 {
+  grid-area: mission-04;
+}
+
+.mission-05 {
+  grid-area: mission-05;
+  background-image: url(../media/golf1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.mission-06 {
+  grid-area: mission-06;
+  border-right: 0.5px solid #000000;
+  height: 400px;
+}
+
+.mission-07 {
+  grid-area: mission-07;
+  text-align: center;
+  border-right: 0.5px solid #000000;
+  background-color: #08201c;
+  color: #fff;
+  height: 400px;
+}
+
+.mission-08 {
+  grid-area: mission-08;
+  height: 400px;
+}
+
+.mission-09 {
+  grid-area: mission-09;
+  background-image: url(../media/golf4.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+  grid-area: nav;
+  width: 100%;
+}
+
+.nav-first {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #08201c;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  grid-area: nav-first;
+}
+
+.nav-second {
+  width: 100vw;
+  padding: 1em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #0b2b26;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Lato", sans-serif;
+  grid-area: nav-second;
+}
+
+.nav-second ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-second a {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-second a:hover {
+  text-decoration: underline 2px #fea206;
+}
+
+.nav-hidden {
+  display: none;
+}
+
+.nav-mobile {
+  padding: 1em;
+  text-align: center;
+  background-color: #0b2b26;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Lato", sans-serif;
+}
+
+.nav-mobile ul {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: row;
+}
+
+.nav-mobile a {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-btn li a:hover {
+  text-decoration: underline 2px #fea206;
+}
+
+.nav-btn li ul li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-btn li ul {
+  display: none;
+  min-height: 100%;
+}
+
+.nav-btn li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav-btn li:hover > ul li {
+  padding: 1em;
+}
+
+.price-1 {
+  grid-area: price-1;
+}
+
+.price-2 {
+  grid-area: price-2;
+}
+
+.price-3 {
+  grid-area: price-3;
+}
+
+.prices-title {
+  grid-area: prices-title;
+  color: #fff;
+  font-size: 2em;
+  padding: 1em;
+  background-image: url("../media/06.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.prices-title p {
+  text-shadow: 10px 10px 30px #000000;
+}
+
+.price-1, .price-2, .price-3 {
+  border-left: 0.5px solid #000000;
+}
+
+.price-title {
+  font-size: 1.75em;
+  padding: 1em;
+}
+
+.price-description {
+  height: 150px;
+  padding: 2em;
+}
+
+.price-description ol {
+  padding: 0.5em 0 0 1em;
+}
+
+.price-price-currency {
+  font-size: 1.75em;
+  text-align: center;
+  padding: 1em;
+}
+
+.price-price-currency a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.price-price-currency a:hover {
+  text-decoration: underline 2px #fea206;
+}
+
+.school-text {
+  grid-area: school-text;
+  display: flex;
+  flex-direction: column;
+}
+
+.school-img {
+  grid-area: school-img;
+  border-left: 0.5px solid #000000;
+}
+
+.school-title {
+  font-size: 2em;
+  padding: 1em;
+}
+
+.school-description {
+  padding: 2em;
+  min-height: 400px;
+}
+
+.horizontal-photo {
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  grid-area: horizontal-photo;
+  border-top: 0.5px solid #000000;
+}
+
+.grid-container-main {
+  display: grid;
+  grid-template-areas: "nav nav nav nav nav nav" "img-phrase img-phrase img-phrase img-phrase img-phrase img-phrase" "school-text school-text school-text school-img school-img school-img" "horizontal-photo horizontal-photo horizontal-photo horizontal-photo horizontal-photo horizontal-photo" "mission-title mission-title mission-title mission-title mission-title mission-title" "mission-container mission-container mission-container mission-container mission-container mission-container" "instructors-title instructors-title instructors-title instructors-title instructors-title instructors-title" "instructor-01 instructor-01 instructor-01 instructor-02 instructor-02 instructor-02" "prices-title prices-title prices-title prices-title prices-title prices-title" "price-1 price-1 price-2 price-2 price-3 price-3" "inscription inscription inscription inscription inscription inscription" "location-map location-map location-map location-map location-map location-map" "seeyou seeyou seeyou seeyou seeyou seeyou" "footer footer footer footer footer footer";
+}
+
+@media (max-width: 900px) {
+  .grid-container-main {
+    grid-template-areas: "nav" "img-phrase" "school-text" "school-img" "horizontal-photo" "mission-title" "mission-container" "instructors-title" "instructor-01" "instructor-02" "prices-title" "price-1" "price-2" "price-3" "inscription" "location-map" "seeyou" "footer";
+  }
+  .mission-container {
+    grid-template-areas: "mission-01" "mission-02" "mission-04" "mission-03" "mission-05" "mission-06" "mission-07" "mission-08" "mission-09";
+  }
+  .school-img {
+    grid-area: school-img;
+    border-top: 0.5px solid #000000;
+    border-left: 0;
+  }
+  .price-description {
+    min-height: 0;
+  }
+  .nav-second {
+    display: none;
+  }
+  .nav-hidden {
+    display: inline;
+  }
+  .price-1, .price-2, .price-3 {
+    border-left: 0;
+  }
+  .img-phrase {
+    height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

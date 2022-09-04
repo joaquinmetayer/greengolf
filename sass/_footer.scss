@@ -1,0 +1,30 @@
+
+.location-map{
+    grid-area: location-map;
+}
+.seeyou{
+    font-size: 1.75em;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    background-image: url('../media/017.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: seeyou;
+}
+.footer{
+    padding: 2em;
+    font-size: 0.8em;
+    background-color: #0b2b26;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    grid-area: footer;
+}
+footer p{
+    padding: 0.5em;
+}
+footer a{
+    color: #fff;
+    text-decoration: underline 2px #fea206; 
+}
