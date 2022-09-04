@@ -13,7 +13,7 @@
 body{
     width: auto;
 }
-li{
+.list-no-style li{
     list-style: none;
 }
 img{
@@ -64,14 +64,13 @@ nav{
     text-decoration: none;
     color: #fff;
 }
-.nav-second a:hover{
+.nav-second a:hover, .price-price-currency a:hover{
     text-decoration: underline 2px #fea206;
 }
 .nav-hidden{
     display: none;
 }
 .nav-mobile{
-
     padding: 1em;
     display: flex;
     justify-content: center;
@@ -167,6 +166,95 @@ nav{
     border-top: 0.5px solid #000000;
     border-bottom: 0.5px solid #000000;
 }
+.mission-title{
+    font-size: 1.5em;
+    padding: 1em;
+    border-bottom: 0.5px solid #000000;
+    grid-area: mission-title;
+}
+.mission-container{
+    grid-area: mission-container;
+    display: grid;
+    border-bottom: 0.5px solid #000000;
+    grid-template-areas: "mission-01 mission-01 mission-01 mission-02 mission-02 mission-02"
+    "mission-03 mission-03 mission-03 mission-04 mission-04 mission-04"
+    "mission-05 mission-05 mission-05 mission-05 mission-05 mission-05"
+    "mission-06 mission-06 mission-07 mission-07 mission-08 mission-08"
+    "mission-09 mission-09 mission-09 mission-09 mission-09 mission-09";
+}
+.mission-text{
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 2em;
+    font-style: italic;
+}
+.mission-01, .mission-02, .mission-03, .mission-04, .mission-05, .mission-06, .mission-07, .mission-08, .mission-09{
+    border-bottom: 0.5px solid #000000;
+}
+.mission-01{
+    grid-area: mission-01;
+    background-color: #0b2b26;
+    color: #fff;
+    border-right: 0.5px solid #000000;
+    height: 400px;
+}
+.mission-02{
+    grid-area: mission-02;
+    height: 400px;
+}
+.mission-03{
+    grid-area: mission-03;
+    border-right: 0.5px solid #000000;
+
+}
+.mission-04{
+    grid-area: mission-04;
+}
+.mission-05{
+    grid-area: mission-05;
+    background-image: url(../media/golf1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.mission-06{
+    grid-area: mission-06;
+    border-right: 0.5px solid #000000;
+    height: 500px;
+
+}
+.mission-07{
+    grid-area: mission-07;
+    text-align: center;
+    border-right: 0.5px solid #000000;
+    background-color: #08201c;
+    color: #fff;
+    height: 500px;
+
+}
+.mission-08{
+    grid-area: mission-08;
+    height: 500px;
+
+}
+.mission-09{
+    grid-area: mission-09;
+    background-image: url(../media/golf4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .instructors-title{
     font-size: 2em;
@@ -246,15 +334,25 @@ nav{
     border-bottom: 0.5px solid #000000;
 }
 .price-description{
-    min-height: 100px;
+    height: 150px;
     padding: 2em;
     border-bottom: 0.5px solid #000000;
+}
+.price-description ol{
+    padding: 0.5em 0 0 1em;
+
 }
 .price-price-currency{
     font-size: 1.75em;
     text-align: center;
     padding: 1em;
 }
+.price-price-currency a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
 .inscription{
     grid-area: inscription;
 }
@@ -303,6 +401,15 @@ button{
     background-color: #fff;
     cursor: pointer;
 }
+button:hover{
+    background-color: #0b2b26;
+    color: #fff;
+}
+
+
+.location-map{
+    grid-area: location-map;
+}
 .footer{
     padding: 2em;
     font-size: 0.8em;
@@ -319,6 +426,8 @@ footer a{
     text-decoration: underline 2px #fea206; 
 }
 
+
+
 .grid-container-main{
     display: grid;
     grid-template-areas: 
@@ -326,11 +435,14 @@ footer a{
         "img-phrase img-phrase img-phrase img-phrase img-phrase img-phrase"
         "school-text school-text school-text school-img school-img school-img"
         "horizontal-photo horizontal-photo horizontal-photo horizontal-photo horizontal-photo horizontal-photo"
+        "mission-title mission-title mission-title mission-title mission-title mission-title"
+        "mission-container mission-container mission-container mission-container mission-container mission-container"
         "instructors-title instructors-title instructors-title instructors-title instructors-title instructors-title"
         "instructor-01 instructor-01 instructor-01 instructor-02 instructor-02 instructor-02"
         "prices-title prices-title prices-title prices-title prices-title prices-title"
         "price-1 price-1 price-2 price-2 price-3 price-3"
         "inscription inscription inscription inscription inscription inscription"
+        "location-map location-map location-map location-map location-map location-map"
         "footer footer footer footer footer footer";
 }
 
@@ -350,6 +462,7 @@ footer a{
         "price-2"
         "price-3"
         "inscription"
+        "location-map"
         "footer";
     }
     .school-img{
