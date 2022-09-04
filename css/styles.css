@@ -454,6 +454,8 @@ footer a{
         "school-text"
         "school-img"
         "horizontal-photo"
+        "mission-title"
+        "mission-container"
         "instructors-title"
         "instructor-01"
         "instructor-02"
@@ -464,6 +466,18 @@ footer a{
         "inscription"
         "location-map"
         "footer";
+    }
+    .mission-container{
+        grid-template-areas: 
+        "mission-01"
+        "mission-02"
+        "mission-04"
+        "mission-03"
+        "mission-05"
+        "mission-06"
+        "mission-07"
+        "mission-08"
+        "mission-09";
     }
     .school-img{
         grid-area: school-img;
