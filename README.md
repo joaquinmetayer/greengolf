@@ -2,6 +2,6 @@
 
 Live view on https://jmgreengolf.netlify.app/
 
-Pure HTML and CSS code.
+Pure HTML and CSS code with SASS.
 
 <img src="./media/Screen Shot 2022-09-04 at 14.55.05.png">
