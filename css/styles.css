@@ -10,8 +10,8 @@
     user-select: none;
     font-family: 'Tiro Gurmukhi', serif;
 }
-body{
-    width: auto;
+.border-btm{
+    border-bottom: 0.5px solid #000000;
 }
 .list-no-style li{
     list-style: none;
@@ -72,9 +72,6 @@ nav{
 }
 .nav-mobile{
     padding: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: #0b2b26;
     color: #fff;
@@ -128,7 +125,6 @@ nav{
     height: 100vh;
     width: 100%;
     grid-area: img-phrase;
-    border-bottom: 0.5px solid #000000;
     text-align: center;
 }
 .img-phrase p{
@@ -151,31 +147,26 @@ nav{
 .school-title{
     font-size: 2em;
     padding: 1em;
-    border-bottom: 0.5px solid #000000;
 }
 .school-description{
     padding: 2em;
     min-height: 400px;
 }
-
 .horizontal-photo{
     display: flex;
     flex-direction: row;
     height: 30vh;
     grid-area: horizontal-photo;
     border-top: 0.5px solid #000000;
-    border-bottom: 0.5px solid #000000;
 }
 .mission-title{
     font-size: 1.5em;
     padding: 1em;
-    border-bottom: 0.5px solid #000000;
     grid-area: mission-title;
 }
 .mission-container{
     grid-area: mission-container;
     display: grid;
-    border-bottom: 0.5px solid #000000;
     grid-template-areas: "mission-01 mission-01 mission-01 mission-02 mission-02 mission-02"
     "mission-03 mission-03 mission-03 mission-04 mission-04 mission-04"
     "mission-05 mission-05 mission-05 mission-05 mission-05 mission-05"
@@ -187,9 +178,6 @@ nav{
     text-transform: uppercase;
     padding: 2em;
     font-style: italic;
-}
-.mission-01, .mission-02, .mission-03, .mission-04, .mission-05, .mission-06, .mission-07, .mission-08, .mission-09{
-    border-bottom: 0.5px solid #000000;
 }
 .mission-01{
     grid-area: mission-01;
@@ -222,7 +210,7 @@ nav{
 .mission-06{
     grid-area: mission-06;
     border-right: 0.5px solid #000000;
-    height: 500px;
+    height: 400px;
 
 }
 .mission-07{
@@ -231,12 +219,12 @@ nav{
     border-right: 0.5px solid #000000;
     background-color: #08201c;
     color: #fff;
-    height: 500px;
+    height: 400px;
 
 }
 .mission-08{
     grid-area: mission-08;
-    height: 500px;
+    height: 400px;
 
 }
 .mission-09{
@@ -247,7 +235,6 @@ nav{
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-
 }
 
 .flex-center{
@@ -259,20 +246,17 @@ nav{
 .instructors-title{
     font-size: 2em;
     padding: 1em;
-    border-bottom: 0.5px solid #000000;
     grid-area: instructors-title;
 }
 .instructor-img{
    max-height: 500px;
    height: 100%;
    width: 100%;
-   border-bottom: 0.5px solid #000000;
 }
 
 .instructor-01{
     grid-area: instructor-01;
     border-right: 0.5px solid #000000;
-    border-bottom: 0.5px solid #000000;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -280,7 +264,6 @@ nav{
 .instructor-02{
     grid-area: instructor-02;
     border-right: 0.5px solid #000000;
-    border-bottom: 0.5px solid #000000;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -288,7 +271,6 @@ nav{
 .instructor-title{
     font-size: 1.75em;
     padding: 1em;
-    border-bottom: 0.5px solid #000000;
 }
 .instructor-subtitle{
     font-weight: bold;
@@ -312,7 +294,6 @@ nav{
 .prices-title{
     grid-area: prices-title;
     color: #fff;
-    border-bottom: 0.5px solid #000000;
     font-size: 2em;
     padding: 1em;
     background-image: url('../media/06.jpeg');
@@ -325,18 +306,15 @@ nav{
     text-shadow: 10px 10px 30px #000000;
 }
 .price-1, .price-2, .price-3{
-    border-bottom: 0.5px solid #000000;
     border-left: 0.5px solid #000000;    
 }
 .price-title{
     font-size: 1.75em;
     padding: 1em;
-    border-bottom: 0.5px solid #000000;
 }
 .price-description{
     height: 150px;
     padding: 2em;
-    border-bottom: 0.5px solid #000000;
 }
 .price-description ol{
     padding: 0.5em 0 0 1em;
@@ -360,7 +338,6 @@ nav{
     font-size: 2em;
     padding: 1em;
     color: #fff;
-    border-bottom: 0.5px solid #000000;
     background-image: url('../media/017.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -377,7 +354,6 @@ nav{
     text-align: center;
 }
 .inscription-form p{
-    border-bottom: 0.5px solid #000000;
     padding: 0 1em 1em 1em;
 }
 .inscription-form form{
@@ -389,7 +365,6 @@ input{
     padding: 1em;
     font-size: 0.8em;
     border: 0;
-    border-bottom: 0.5px solid #000000;
     margin-bottom: 0.5px;
     color: #000000;
 }
@@ -397,7 +372,6 @@ button{
     padding: 1em 0 1em;
     font-size: 0.8em;
     border: 0;
-    border-bottom: 0.5px solid #000000;
     background-color: #fff;
     cursor: pointer;
 }
@@ -410,6 +384,18 @@ button:hover{
 .location-map{
     grid-area: location-map;
 }
+.seeyou{
+    font-size: 1.75em;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    background-image: url('../media/017.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: seeyou;
+}
+
 .footer{
     padding: 2em;
     font-size: 0.8em;
@@ -443,6 +429,7 @@ footer a{
         "price-1 price-1 price-2 price-2 price-3 price-3"
         "inscription inscription inscription inscription inscription inscription"
         "location-map location-map location-map location-map location-map location-map"
+        "seeyou seeyou seeyou seeyou seeyou seeyou"
         "footer footer footer footer footer footer";
 }
 
@@ -465,6 +452,7 @@ footer a{
         "price-3"
         "inscription"
         "location-map"
+        "seeyou"
         "footer";
     }
     .mission-container{
