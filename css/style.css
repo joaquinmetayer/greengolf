@@ -31,6 +31,10 @@ img {
   align-items: center;
 }
 
+.underline {
+  text-decoration: underline 2px #fea206;
+}
+
 .location-map {
   grid-area: location-map;
 }
@@ -142,6 +146,7 @@ button {
 button:hover {
   background-color: #0b2b26;
   color: #fff;
+  text-decoration: underline 2px #fea206;
 }
 
 .instructors-title {
@@ -405,7 +410,7 @@ nav {
 }
 
 .price-description {
-  height: 150px;
+  height: 200px;
   padding: 2em;
 }
 
@@ -417,11 +422,12 @@ nav {
   font-size: 1.75em;
   text-align: center;
   padding: 1em;
+  background-color: #0b2b26;
 }
 
 .price-price-currency a {
   text-decoration: none;
-  color: #000000;
+  color: #fff;
 }
 
 .price-price-currency a:hover {
