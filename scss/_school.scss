@@ -12,8 +12,10 @@
     padding: 1em;
 }
 .school-description{
-    padding: 2em;
-    min-height: 400px;
+    padding: 1.4em;
+    min-height: 200px;
+    font-size: 1.25em;
+    text-align: justify;
 }
 .horizontal-photo{
     display: flex;
@@ -21,4 +23,6 @@
     height: 30vh;
     grid-area: horizontal-photo;
     border-top: 0.5px solid #000000;
+    transform: scaleX(-1);
+    z-index: -1;
 }

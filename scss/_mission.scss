@@ -1,11 +1,12 @@
 .mission-title{
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 1em;
     grid-area: mission-title;
 }
 .mission-container{
     grid-area: mission-container;
     display: grid;
+    grid-auto-columns: 1fr;
     grid-template-areas: "mission-01 mission-01 mission-01 mission-02 mission-02 mission-02"
     "mission-03 mission-03 mission-03 mission-04 mission-04 mission-04"
     "mission-05 mission-05 mission-05 mission-05 mission-05 mission-05"
@@ -65,10 +66,9 @@
 }
 .mission-09{
     grid-area: mission-09;
-    background-image: url(../media/golf4.jpeg);
+    background-image: url(../media/dan-congdon-gJeusCuFyYA-unsplash.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     color: #fff;
 }

@@ -1,5 +1,6 @@
 .grid-container-main{
     display: grid;
+    grid-auto-columns: 1fr;
     grid-template-areas: 
         "nav nav nav nav nav nav"
         "img-phrase img-phrase img-phrase img-phrase img-phrase img-phrase"
